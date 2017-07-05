@@ -1,0 +1,50 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:b="http://bootsfaces.net/ui">
+    <div class="container-fluid">
+        <div class="row col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h:outputScript name="js/jquery-3.1.1.min.js" />
+            <!--<h:outputScript name="js/jquery_ui/jquery-ui.min.js" />
+            <h:outputScript name="js/jquery_ui/jquery-ui.structure.min.js" />
+            <h:outputScript name="js/jquery_ui/jquery-ui.theme.min.js" />-->
+            
+            <h:outputScript name="DataTables/datatables.js" />
+            <h:outputScript name="DataTables/dataTables.altEditor.free.js" />
+            <!-- <h:outputScript name="DataTables/dataTables.buttons.min.js" />
+            <h:outputScript name="DataTables/jquery.dataTables.min.js" />
+            <h:outputScript name="DataTables/dataTables.select.min.js" />
+            <h:outputScript name="DataTables/dataTables.responsive.min.js" /> -->
+            
+            <h:outputScript name="js/highstock/js/highstock.js" />
+            <h:outputScript name="js/highstock/js/modules/data.js" />
+            <h:outputScript name="js/highstock/js/modules/exporting.js" />
+            <h:outputScript name="js/highstock/js/modules/offline-exporting.js" />
+            <h:outputScript name="js/highstock/js/modules/drilldown.js" />
+            <!-- <h:outputScript name="js/Highcharts/code/js/highcharts.js" />
+            <h:outputScript name="js/Highcharts/code/js/highcharts-3d.js" />
+            <h:outputScript name="js/Highcharts/code/js/highcharts-more.js" />
+            <h:outputScript name="js/Highcharts/code/js/modules/data.js" />
+            <h:outputScript name="js/Highcharts/code/js/modules/drilldown.js" />
+            <h:outputScript name="js/Highcharts/code/js/modules/exporting.js" />
+            <h:outputScript name="js/Highcharts/code/js/modules/offline-exporting.js" /> -->
+            <!-- <h:outputScript name="js/Highstock_5_0_7/code/js/highstock.js" />
+            <h:outputScript name="js/Highstock_5_0_7/code/js/modules/data.js" />
+            <h:outputScript name="js/Highstock_5_0_7/code/js/modules/exporting.js" />
+            <h:outputScript name="js/Highstock_5_0_7/code/js/modules/offline-exporting.js" />
+            <h:outputScript name="js/Highstock_5_0_7/code/js/modules/drilldown.js" /> -->
+            <!-- <h:outputScript name="js/highstock/js/highmaps.js" /> -->
+            
+            <h:outputScript name="js/jsf.js" />
+        	<h:outputScript name="js/tooltip.js" />
+        	<h:outputScript name="js/bsf.js" />
+            
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ui:include src="leftMenu.xhtml" />
+            </div>
+            <h1 align="center" class="page-header"> <i class="fa fa-bank"></i>Edelweiss Technology Dashboard</h1>
+            <ui:insert name="content" />
+        </div>
+    </div>
+</ui:composition>

@@ -1,0 +1,40 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core_1_1">
+	<b:container fluid="true">
+		<c:set var="loc" value="/aggregator/fe/reports" scope="request" />
+		<b:row>
+			<b:column col-sm="3" col-md="2" styleClass="sidebar">
+				<b:listLinks>
+					<b:navLink header="  " />
+					<b:dropMenu value="Dashboard">
+						<b:navLink outcome="pcInvRpt2">
+							<i class="fa fa-television" aria-hidden="true" />    Desktop Inventory</b:navLink>
+						<b:navLink outcome="pcLicRpt2">
+							<i class="fa fa-database" aria-hidden="true" />    License Inventory</b:navLink>
+						<b:navLink outcome="servSRpt2">
+							<i class="fa fa-server" aria-hidden="true" />   Server Inventory</b:navLink>
+						<b:navLink outcome="bwSvsRpt2">
+							<i class='fa fa-signal' aria-hidden="true" />    Bandwidth Inventory</b:navLink>
+					</b:dropMenu>
+					<b:dropMenu value="Reports">
+						<b:navLink outcome="tasksRpt2.jsf">
+							<i class='fa fa-thumb-tack' aria-hidden="true" />     Task Management</b:navLink>
+						<b:navLink outcome="projectS2.jsf">
+							<i class='fa fa-sitemap' aria-hidden="true" />    Project Management</b:navLink>
+						<b:navLink outcome="exMgtRpt2.jsf">
+							<i class="fa fa-trash-o" aria-hidden="true" />    Exception Management</b:navLink>
+					</b:dropMenu>
+					<b:dropMenu value="Analytics">
+						<b:navLink outcome="tdDasRpt2">
+							<i class='fa fa-area-chart' aria-hidden="true" />    Trading Statistics</b:navLink>
+					</b:dropMenu>
+					<b:navLink href="#" value="Admin" />
+				</b:listLinks>
+			</b:column>
+		</b:row>
+	</b:container>
+</ui:composition>

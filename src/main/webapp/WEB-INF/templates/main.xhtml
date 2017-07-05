@@ -1,0 +1,51 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+      
+    <f:facet name="first">
+        <title>primestrap</title>
+    </f:facet>
+    <f:facet name="middle">
+        <h:outputScript name="js/jquery-1.11.1.min.js" />
+       
+        <h:outputStylesheet name="css/bootstrap.css" />
+        <h:outputStylesheet name="css/dashboard.css" />
+        <h:outputStylesheet name="css/newtab.css" />
+        <h:outputStylesheet name="css/common.css" />
+        <h:outputStylesheet name="css/list.css" />
+        <h:outputStylesheet name="css/general.css" />
+        <h:outputStylesheet name="css/animate.css" />
+        <h:outputStylesheet name="css/bootstrap-version-switch.css" />
+        <h:outputStylesheet name="css/style.css" />
+        <h:outputStylesheet name="css/screen.css" />
+        <h:outputStylesheet name="css/style.css" />
+        <h:outputStylesheet name="css/ng-grid.min.css" />
+        <h:outputStylesheet name="css/newtab.css" />
+        <h:outputStylesheet name="css/screen.css" />
+        <h:outputStylesheet name="css/bsf.css" />
+        <h:outputStylesheet name="css/theme.css" />
+        <h:outputStylesheet name="css/tooltip.css" />
+        <h:outputStylesheet name="css/core.css" />
+        <h:outputStylesheet name="css/navbar.css" />
+        <h:outputStylesheet name="css/bootstrap.min.css" />
+        
+        <h:outputStylesheet name="DataTables/datatables.css" />
+        <h:outputStylesheet name="css/dataTables.bootstrap.min.css" />
+        <h:outputStylesheet name="DataTables/buttons.dataTables.min.css" />
+        <h:outputStylesheet name="DataTables/jquery.dataTables.min.css" />
+        <h:outputStylesheet name="DataTables/responsive.dataTables.min.css" />
+        <h:outputStylesheet name="DataTables/select.dataTables.min.css" /> 
+        
+        <h:outputStylesheet name="js/jquery_ui/jquery-ui.min.css" />
+        <h:outputStylesheet name="js/jquery_ui/jquery-ui.structure.min.css" />
+        <h:outputStylesheet name="js/jquery_ui/jquery-ui.theme.min.css" />
+    </f:facet>
+    <f:facet name="last">
+        <h:outputScript name="js/common/list.js" />
+        <h:outputStylesheet name="css/font-awesome.css" />
+    </f:facet>
+    <ui:include src="header.xhtml" />
+    <ui:include src="content.xhtml" />
+    <ui:insert name="main" />
+</ui:composition>

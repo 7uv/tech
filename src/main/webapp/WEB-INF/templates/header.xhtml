@@ -1,0 +1,59 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui">
+	<h:head>
+		<title>Activity Dashboard</title>
+		<meta name="author" content="Sayantan Ghosh"></meta>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="googlebot" content="noindex" />
+		<style>
+.navbar-brand {
+	background: url("#{resource['gfx/wildfly_400x140.png']}") center/contain
+		no-repeat;
+	width: 200px;
+}
+</style>
+	</h:head>
+	<div style="padding-top: 60px">
+		<b:navBar brand="." brandHref="home.jsf" inverse="true" fixed="top"
+			fluid="true">
+			<b:navbarLinks pull="right">
+				<b:dropMenu value="Dashboard">
+					<b:navLink outcome="pcInvRpt2">
+						<i class="fa fa-television" aria-hidden="true" />    Desktop Inventory</b:navLink>
+					<b:navLink outcome="pcLicRpt2">
+						<i class="fa fa-database" aria-hidden="true" />    License Inventory</b:navLink>
+					<b:navLink outcome="servSRpt2">
+						<i class="fa fa-server" aria-hidden="true" />   Server Inventory</b:navLink>
+					<b:navLink outcome="bwSvsRpt2">
+						<i class='fa fa-signal' aria-hidden="true" />    Bandwidth Inventory</b:navLink>
+				</b:dropMenu>
+				<b:dropMenu value="Reports">
+					<b:navLink outcome="tasksRpt2.jsf">
+						<i class='fa fa-thumb-tack' aria-hidden="true" />     Task Management</b:navLink>
+					<b:navLink outcome="projectS2.jsf">
+						<i class='fa fa-sitemap' aria-hidden="true" />    Project Management</b:navLink>
+					<b:navLink outcome="exMgtRpt2.jsf">
+						<i class="fa fa-trash-o" aria-hidden="true" />    Exception Management</b:navLink>
+				</b:dropMenu>
+				<b:dropMenu value="Analytics">
+					<b:navLink outcome="tdDasRpt2">
+						<i class='fa fa-area-chart' aria-hidden="true" />    Trading Statistics</b:navLink>
+				</b:dropMenu>
+				<b:navLink href="#" value="Admin" />
+			</b:navbarLinks>
+			<!--<h:form styleClass="navbar-form navbar-right">
+                <div class="form-group">
+                    <b:inputText placeholder="Search..." fieldSize="sm" />
+                </div>
+            </h:form>-->
+		</b:navBar>
+	</div>
+</ui:composition>

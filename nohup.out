@@ -1,0 +1,15 @@
+1499174570697	addons.webextension.firefox@ghostery.com	WARN	Loading extension 'firefox@ghostery.com': Reading manifest: Error processing background.persistent: Event pages are not currently supported. This will run as a persistent background page.
+1499174570712	addons.webextension.firefox@ghostery.com	WARN	Loading extension 'firefox@ghostery.com': Reading manifest: Error processing version_name: An unexpected property was found in the WebExtension manifest.
+1499174570712	addons.webextension.firefox@ghostery.com	WARN	Loading extension 'firefox@ghostery.com': Reading manifest: Error processing options_page: An unexpected property was found in the WebExtension manifest.
+1499174570780	addons.webextension.firefox@ghostery.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+1499175192778	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1499175192806	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1499175193030	addons.update-checker	WARN	Update manifest for aushelper@mozilla.org did not contain an updates property
+1499175193039	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+1499175193053	addons.update-checker	WARN	Update manifest for followonsearch@mozilla.com did not contain an updates property
+1499175193061	addons.update-checker	WARN	Update manifest for clicktoplay-rollout@mozilla.org did not contain an updates property
+1499175193290	addons.update-checker	WARN	Update manifest for webcompat-reporter@mozilla.org did not contain an updates property
+1499175193300	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+(file-roller:14118): Gtk-WARNING **: Allocating size to GtkScrolledWindow 0x55c911058510 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+1499272237391	addons.webextension.firefox@ghostery.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
