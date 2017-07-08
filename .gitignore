@@ -77,6 +77,8 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
+# Linux
+nohup.out
 
 ### Project
 ### git update-index --assume-unchanged src/main/webapp/resources/gfx/wildfly_400x130.jpg
